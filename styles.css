@@ -1,0 +1,552 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primary-color: rgb(33, 33, 103);
+  --text-color: rgb(82, 218, 242);
+  --main-color: blueviolet;
+}
+body {
+  font-family: montserrat;
+  background: url(./img/large-triangles.png);
+  color: black;
+  font-size: 1rem;
+}
+header {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-items: space-between;
+  background: transparent;
+  width: 100%;
+  z-index: 100;
+}
+nav {
+  background: rgba(0, 0, 0, 0.2);
+  height: 62px;
+  width: 100%;
+}
+label.logo {
+  color: var(--primary-color);
+  font-size: 35px;
+  line-height: 60px;
+  padding: 0 100px;
+  font-weight: bold;
+ 
+}
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 60px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: var(--primary-color);
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  transition: 0.5s ease-in-out;
+  font-weight: bolder;
+}
+
+nav ul li a:hover {
+  color: var(--main-color);
+  font-weight: bolder;
+  transition: 0.5s ease-in-out;
+
+  border-bottom: .3rem solid var(--main-color);
+}
+ .active {
+  color: var(--main-color);
+  border-bottom: .3rem solid var(--main-color);
+}
+ 
+.checkbtn {
+  font-size: 30px;
+  color: black;
+  float: right;
+  line-height: 60px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+
+main {
+  text-align: center;
+  color: #000;
+  font-size: 2rem;
+}
+#home {
+  margin-top: 70px;
+  height: 100vh;
+  background-image: url(./img/unsplash.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: var(--main-color);
+  letter-spacing: 2px;
+  font-size: 3rem;
+}
+
+#about {
+  height: auto;
+  margin-top: 100px;
+}
+
+.multiple-text {
+  color: var(--main-color);
+  font: 3rem sans-serif;
+}
+.curriculum {
+  background-color: var(--primary-color);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2.8rem;
+  background: var(--main-color);
+  border-radius: 4rem;
+  box-shadow: 0 0 2rem var(--text-color);
+  font-size: 1.6rem;
+  color: var(--text-color);
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  transition: 0.5s ease;
+}
+
+.btn:hover {
+  box-shadow: none;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: auto;
+}
+/* Estilos para la social-media*/
+.social-media a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  background: transparent;
+  border: 0.2rem solid var(--main-color);
+  border-radius: 50%;
+  font-size: 2rem;
+  color: var(--main-color);
+  margin: 3rem 1.5rem 3rem 0;
+  transition: 0.5s ease;
+}
+
+.social-media a:hover {
+  background: var(--main-color);
+  color: var(--text-color);
+  box-shadow: 0 0 1rem var(--main-color);
+}
+/* Estilos para la tarjetas about */
+.card {
+  width: 400px;
+  height: 500px;
+  border: 3px solid var(--primary-color);
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #1b4671;
+}
+
+.card-image {
+  width: 100%;
+  transition: 0.5s;
+}
+
+.card-image:hover {
+  transform: scale(1.2);
+  border: 3px solid var(--primary-color);
+  overflow: hidden;
+}
+.card-content {
+  padding: 10px;
+}
+
+.card-content i {
+  padding: 20px;
+  background-color: transparent;
+  color: white;
+  margin-top: 20px;
+  border-radius: 50%;
+  transition: 0.5s ease-in-out;
+}
+
+.card-content i:hover {
+  padding: 20px;
+  background-color: var(--primary-color);
+  color: white;
+  box-shadow: 0 0 3rem var(--main-color);
+}
+
+.card-title {
+  font-size: 2rem;
+  margin: 10px;
+  color: var(--text-color);
+}
+
+.card-text {
+  font-size: 1.2rem;
+  color: white;
+}
+
+#services {
+  height: auto;
+}
+/* Estilos para la tarjeta servicios */
+.container-services {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.services {
+  background: rgba(0, 0, 0, 0.2);
+
+  display: flex;
+  justify-content: center;
+
+  width: 90%; /* Ajusta el ancho de acuerdo a tus necesidades */
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  overflow: hidden;
+  margin: 20px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: 0.5s linear;
+}
+
+.services-image {
+  width: 300px; /* Ancho de la imagen */
+  border-radius: 2rem;
+  border: 4px solid var(--main-color);
+  display: block;
+}
+
+.services-content {
+  width: 60%; /* Ancho del contenido de texto */
+  padding: 20px;
+}
+
+.services-text-container {
+  display: flex;
+  flex-direction: column;
+  align-self: auto;
+  margin: 15px;
+}
+.services-title {
+  font-size: 1.5em;
+  margin-bottom: 30px;
+  color: var(--main-color);
+}
+.services-text {
+  font-size: 1.2rem;
+  margin: 5px;
+  color: black;
+}
+
+.btn-services {
+  display: inline-block;
+  padding: 1rem 2.8rem;
+  background: var(--text-color);
+  border-radius: 4rem;
+  box-shadow: 0 0 2rem var(--main-color);
+  font-size: 1.3rem;
+  color: var(--main-color);
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  transition: 0.5s ease;
+}
+
+.btn-services:hover {
+  box-shadow: none;
+}
+
+#projects {
+  height: auto;
+}
+
+
+/* Estilos para el slider */
+.contenedor-slider {
+  display: flex;
+
+  justify-items: center;
+  align-items: center;
+  gap: 40px;
+  width: 1000px;
+  padding: 40px 40px;
+  margin: auto;
+}
+
+.slider-izq i,
+.slider-der i {
+  width: 100%;
+  cursor: pointer;
+}
+
+.slider-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.slider-screen img {
+  width: 100%;
+}
+
+
+
+#contact {
+ 
+  height: auto;
+}
+
+/* Estilos para el formulario */
+
+.container-form {
+  width: 40%;
+  margin: 50px auto;
+  background: #a6a2a2;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+  width: calc(100% - 12px);
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #cccccc;
+  font-size: 1rem;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.form-group input[type="submit"] {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.form-group input[type="submit"]:hover {
+  background-color: var(--main-color);
+}
+
+.footer {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+  font-size: 1.5rem;
+}
+
+.footer a i {
+  text-align: center;
+
+  font-size: 3rem;
+}
+
+@media (max-width: 1052px) {
+  label.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin: auto;
+  }
+
+  .container-form {
+    width: 60%;
+    margin: 50px auto;
+
+    padding: 10px;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 1.5rem;
+    height: auto;
+  }
+
+  .contenedor-slider {
+    width: 90%;
+  }
+}
+
+@media (max-width: 758px) {
+  .checkbtn {
+    display: block;
+  }
+
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #a5bacf;
+    top: 60px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 10px;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+  }
+
+  #check:checked ~ ul {
+    left: 0;
+  }
+
+  .card-container {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .container-form {
+    width: 80%;
+    margin: 50px auto;
+
+    padding: 10px;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 1.5rem;
+    height: auto;
+  }
+  .services {
+    display: block;
+    font: 1em sans-serif;
+  }
+}
+
+@media (max-width: 458px) {
+  .checkbtn {
+    display: block;
+  }
+
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #a5bacf;
+    top: 60px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 10px;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+  }
+
+  #check:checked ~ ul {
+    left: 0;
+  }
+
+  .card-container {
+    display: block;
+
+    margin: auto;
+  }
+  .card {
+    width: 90%;
+  }
+
+  .container-form {
+    width: 80%;
+    margin: 50px auto;
+
+    padding: 10px;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 1.5rem;
+    height: auto;
+  }
+
+  .slider-screen {
+    min-width: 90%;
+  }
+
+  .logo {
+    width: 80%;
+  }
+  .services-content {
+    width: 100%; /* Ancho del contenido de texto */
+    padding: 10px;
+  }
+  .services-title {
+    font-size: 1.7rem;
+  }
+  .services-text {
+    font-size: 1rem;
+  }
+}

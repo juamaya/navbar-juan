@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="./img/marin.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <!-- ICONOS -->
+    <script src="https://kit.fontawesome.com/43738ce479.js" crossorigin="anonymous"></script>
+    <!--! boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Navbar responsive</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+
+            <label class="logo">JUAMAYA</label>
+
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars" id="menu-icon"></i>
+            </label>
+
+
+         
+
+            <ul>
+                <li><a href="#home"   id="link1" onclick="activarLink('link1')">Home</a></li>
+                <li><a href="#about"   id="link2" onclick="activarLink('link2')">  About</a></li>
+                <li><a href="#services" id="link3" onclick="activarLink('link3')">Services</a></li>
+                <li><a href="#projects"  id="link4" onclick="activarLink('link4')">Projects</a></li>
+                <li><a href="#contact"  id="link5" onclick="activarLink('link5')">Contact</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+
+        <section id="home">
+            <br>
+            <br>
+            <h2>WEBSITE</h2>
+
+        </section>
+        <section id="about">
+            <br>
+            <br>
+            <h3>Hello, It's Me</h3>
+            <h1>Juan Marin</h1>
+            <h3>And I'm a <span class="multiple-text"> </span></h3>
+
+
+
+            <div class="social-media">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="#"><i class='bx bxl-linkedin'></i></a>
+            </div>
+            <div class="curriculum">
+                <a href="https://juamaya.github.io/curricujuan.github.io/" target="_blank" class="btn">See CV</a>
+                <a href="curriculum.pdf" download="curriculum.pdf" class="btn">Download CV</a>
+            </div>
+
+            <br>
+            <br>
+            <div class="card-container">
+                <div class="card">
+                    <img src="./img/undraw_flying_drone.png" alt="Imagen" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Frontend Developer</h3>
+                        <p class="card-text">Este es un párrafo de ejemplo para la tarjeta.</p>
+                        <i class="fa-solid fa-computer"></i>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./img/undraw_New_Year_2023.png" alt="Imagen" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Aeronautical Assembler</h3>
+                        <p class="card-text">Este es un párrafo </p>
+                        <i class="fa-solid fa-jet-fighter-up"></i>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="./img/undraw_Relaxation.png" alt="Imagen" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Electrician</h3>
+                        <p class="card-text">Este es un párrafo de ejemplo para la tarjeta.</p>
+                        <i class="fa-solid fa-arrow-up-right-dots"></i>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </section>
+        <section id="services">
+            <br>
+            <h2>Services</h2>
+            <br>
+            <img src="./img/logo1.png" class="logo" alt="">
+
+
+            <div class="container-services">
+                <div class="services">
+                    <img src="./img-services/undraw_JavaScript_frameworks.png" alt="Imagen" class="services-image">
+                    <div class="services-content">
+                        <div class="services-text-container">
+                            <h3 class="services-title"> Frameworks</h3>
+                            <p class="services-text"> ✅ React_JS.</p>
+                            <p class="services-text"> ✅ Angular_JS.</p>
+                            <p class="services-text"> ✅ Vue_JS.</p>
+                        </div>
+                        <a href="#" class="btn-services">Read More</a>
+                    </div>
+                </div>
+                <div class="services">
+
+                    <div class="services-content">
+                        <div class="services-text-container">
+                            <h3 class="services-title"> Título </h3>
+                            <p class="services-text"> ✅ Este es un párrafo de ejemplo para la tarjeta.</p>
+                            <p class="services-text"> ✅ Este es un párrafo de ejemplo para la tarjeta.</p>
+                            <p class="services-text"> ✅ Este es un párrafo de ejemplo para la tarjeta.</p>
+                        </div>
+                        <a href="#" class="btn-services">Read More</a>
+                    </div>
+                    <img src="./img-services/undraw_World.png" alt="Imagen" class="services-image">
+                </div>
+            </div>
+
+            <div class="container-services">
+                <div class="services">
+                    <img src="./img-services/undraw_Pair_programming.png" alt="Imagen" class="services-image">
+                    <div class="services-content">
+                        <div class="services-text-container">
+                            <h3 class="services-title"> Frameworks</h3>
+                            <p class="services-text"> ✅ Este es un párrafo de ejemplo para la tarjeta.</p>
+                            <p class="services-text"> ✅ Este es un párrafo de ejemplo para la tarjeta.</p>
+                            <p class="services-text"> ✅ Este es un párrafo de ejemplo para la tarjeta.</p>
+                        </div>
+                        <a href="#" class="btn-services">Read More</a>
+                    </div>
+                </div>
+                <div class="services">
+
+                    <div class="services-content">
+                        <div class="services-text-container">
+                            <h3 class="services-title">Electricity </h3>
+                            <p class="services-text"> ✅ Instalaciones Electricas.</p>
+                            <p class="services-text"> ✅ Cuadros Electricos.</p>
+                            <p class="services-text"> ✅ Programacion PLC.</p>
+                        </div>
+                        <a href="#" class="btn-services">Read More</a>
+                    </div>
+                    <img src="./img-services/undraw_electricity.png" alt="Imagen" class="services-image">
+                </div>
+            </div>
+
+            <div class="container-services">
+                <div class="services">
+                    <img src="./img-services/undraw_light.png" alt="Imagen" class="services-image">
+                    <div class="services-content">
+                        <div class="services-text-container">
+                            <h3 class="services-title"> Frameworks</h3>
+                            <p class="services-text"> ✅ Este es un párrafo de ejemplo para la tarjeta.</p>
+                            <p class="services-text"> ✅ Este es un párrafo de ejemplo para la tarjeta.</p>
+                            <p class="services-text"> ✅ Este es un párrafo de ejemplo para la tarjeta.</p>
+                        </div>
+                        <a href="#" class="btn-services">Read More</a>
+                    </div>
+                </div>
+                <div class="services">
+
+                    <div class="services-content">
+                        <div class="services-text-container">
+                            <h3 class="services-title"> Título </h3>
+                            <p class="services-text"> ✅ Este es un párrafo de ejemplo para la tarjeta.</p>
+                            <p class="services-text"> ✅ Este es un párrafo de ejemplo para la tarjeta.</p>
+                            <p class="services-text"> ✅ Este es un párrafo de ejemplo para la tarjeta.</p>
+                        </div>
+                        <a href="#" class="btn-services">Read More</a>
+                    </div>
+                    <img src="./img-services/undraw_next_js.png" alt="Imagen" class="services-image">
+                </div>
+            </div>
+
+        </section>
+
+        <section id="projects">
+
+            <br>
+            <h2>Projects</h2>
+            <br>
+            <div class="contenedor-slider">
+
+
+
+                <div class="slider-screen">
+                    <div class="slider-izq">
+                        <i class="fa-solid fa-arrow-left "></i>
+                    </div>
+                    <img name="Imagen" src="./img/marin.png" alt="screen">
+                    <div class="slider-der">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+
+        </section>
+        <section id="contact">
+            <br>
+            <h2> Contacto Me!</h2>
+            <br>
+            <div class="container-form">
+                <h2>Formulario de Contacto</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="asunto">Asunto:</label>
+                        <input type="text" id="asunto" name="asunto" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="descripcion">Descripción:</label>
+                        <textarea id="descripcion" name="descripcion" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Enviar">
+                    </div>
+                </form>
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+
+
+    <footer>
+        <div class="footer">
+            <p>Copyright &copy; 2023 by Juamaya | All Rights Reserved.</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-short-wide"></i></a>
+        </div>
+
+    </footer>
+
+    <!--! scroll reveal-->
+    <!-- https://scrollrevealjs.org/guide/hello-world.html -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+
+    <!--! typed js-->
+    <!-- https://github.com/mattboldt/typed.js/ -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
