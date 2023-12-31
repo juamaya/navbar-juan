@@ -1,9 +1,11 @@
-## 
+## Portafolio
 ---
 
- [Visitar](https://juamaya.github.io/navbar-juan)
+[Visitar](https://juamaya.github.io/navbar-juan)
 
 ---
 
-![Portafolio](./navbar-juan "Portafolio")
+![Portafolio](./navbar-juan.png "Portafolio")
+
+---
 
